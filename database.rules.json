@@ -1,0 +1,13 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "expenseTracker": {
+      "main": {
+        ".read": "auth !== null && auth.uid === 'REPLACE_WITH_PERSONAL_FIREBASE_UID'",
+        ".write": "auth !== null && auth.uid === 'REPLACE_WITH_PERSONAL_FIREBASE_UID' && newData.exists()",
+        ".validate": "newData.hasChildren(['savedAt', 'state']) && newData.child('savedAt').isString() && newData.child('state').child('selectedMonth').isString()"
+      }
+    }
+  }
+}
