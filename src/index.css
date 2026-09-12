@@ -1,0 +1,72 @@
+:root {
+  --bg: #f7f7f5;
+  --ink: #202124;
+  --muted: #6f7378;
+  --line: #e5e5e2;
+  --brand: #2f6f5e;
+  --danger: #a54343;
+  font-family: 'Aptos', 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  border-radius: 14px;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  padding: 0.75rem 0.85rem;
+  background: #fff;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
