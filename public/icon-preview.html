@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker Icon Preview</title>
+    <style>
+      :root {
+        color: #1f2430;
+        background: #f3efe7;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+      }
+
+      h1 {
+        margin: 0 0 24px;
+        font-size: clamp(1.6rem, 4vw, 3rem);
+        line-height: 1;
+      }
+
+      .preview-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 18px;
+      }
+
+      .preview {
+        display: grid;
+        gap: 12px;
+        align-content: start;
+        padding: 18px;
+        border: 1px solid rgba(31, 36, 48, 0.12);
+        border-radius: 8px;
+        background: #fffdf8;
+      }
+
+      .preview img {
+        width: var(--size);
+        height: var(--size);
+        border-radius: 22%;
+        box-shadow: 0 18px 40px rgba(31, 36, 48, 0.18);
+      }
+
+      .preview span {
+        font-size: 0.9rem;
+        color: rgba(31, 36, 48, 0.72);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Expense Tracker Icon</h1>
+      <section class="preview-grid" aria-label="Icon size previews">
+        <div class="preview">
+          <img src="icons/pig-comic-512.png" alt="Expense Tracker icon at 128 pixels" style="--size: 128px" />
+          <span>Launcher preview</span>
+        </div>
+        <div class="preview">
+          <img src="icons/pig-comic-192.png" alt="Expense Tracker icon at 96 pixels" style="--size: 96px" />
+          <span>PWA 192px scaled</span>
+        </div>
+        <div class="preview">
+          <img src="icons/pig-comic-192.png" alt="Expense Tracker icon at 48 pixels" style="--size: 48px" />
+          <span>Small app surface</span>
+        </div>
+        <div class="preview">
+          <img src="icons/pig-comic-192.png" alt="Expense Tracker icon at 32 pixels" style="--size: 32px" />
+          <span>Favicon scale</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
